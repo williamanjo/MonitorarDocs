@@ -10,7 +10,7 @@
                 $changeType = $Event.SourceEventArgs.ChangeType
 				
 				$nameDocNew = "$((Get-Date).tostring("dd-MM-yyyy hh.mm.ss")).txt"
-                $dest = "C:\Users\$env:UserName\Documents\teste\$(nameDocNew)"
+                $dest = "C:\Users\$env:UserName\Documents\teste\$nameDocNew"
                 
                 ###C:\PS>split-path "C:\Users\$env:UserName\Documents\teste\log.txt" -leaf -resolve
                 $logline = "$((Get-Date).tostring("dd-MM-yyyy")), $changeType, $path , $nameDocNew"
